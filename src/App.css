@@ -5,19 +5,19 @@
   margin-right: auto;
 }
 
-.nav {
+.navigation {
   font-weight: bold;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-.nav > ul {
+.navigation > ul {
   list-style-type: none;
   display: flex;
   padding: 1em;
 }
 
-.nav li {
+.navigation li {
   padding: 1rem;
 }

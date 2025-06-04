@@ -1,4 +1,4 @@
-import { ReactComponent as Logo } from '../assets/Logo.svg';
+import { ReactComponent as Logo } from './assets/Logo.svg';
 import './App.css';
 
 function App() {
@@ -7,7 +7,7 @@ function App() {
       <header className='head'>
         <Logo />
       </header>
-      <nav>
+      <nav className='navigation'>
         <ul>
           <li>Home</li>
           <li>About</li>
