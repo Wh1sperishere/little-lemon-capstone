@@ -1,16 +1,28 @@
-import Header from "./Components/Header"
-import NavBar from "./Components/NavBar"
-import Main from "./Components/Main"
-import Footer from "./Components/Footer"
+import { ReactComponent as Logo } from '../assets/Logo.svg';
 import './App.css';
 
 function App() {
   return (
     <>
-    <Header />
-    <NavBar />
-    <Main />
-    <Footer />
+      <header className='head'>
+        <Logo />
+      </header>
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Menu</li>
+          <li>Reservations</li>
+          <li>Order Online</li>
+          <li>LogIn</li>
+        </ul>
+      </nav>
+      <main>
+        <h2>This is a Main Section</h2>
+      </main>
+      <footer>
+        <h3>This is a footer</h3>
+      </footer>
     </>
   );
 }
