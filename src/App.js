@@ -8,6 +8,15 @@ import Reservations from './Pages/Reservations'
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import './App.css';
 
+function Footer() {
+  return (
+    <footer className='footerSection'>
+      <h1>this is a footer for now</h1>
+    </footer>
+  );
+}
+
+
 function App() {
   return (
     <>
@@ -35,9 +44,7 @@ function App() {
             <Route path='/login' element={<LogInOrRegister />} />
           </Routes>
         </main>
-        <footer>
-          <h3>This is a footer</h3>
-        </footer>
+        <Footer />
       </BrowserRouter>
     </>
   );

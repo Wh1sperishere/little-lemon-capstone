@@ -1,0 +1,24 @@
+This project is for the capstone of the meta front-end development course from meta
+
+for now i added the components and some CSS like:
+
+1-The navigation bar is mostly finished with proper Routes and some CSS for now 
+the only remaining thing is:
+
+
+A-Still need some CSS styling for proper looks
+
+B-A better logo for Little Lemon
+
+
+2- The Menu still need A LOT OF work with adding:
+
+A-Hero section with a route to the reserve a table page
+
+B-HighLigths for Specials Menu and a route to the menu page
+
+C-testimonials section
+
+D-About us section with a route to the page for more details
+
+F-a footer with a roue to all pages and some details like a copyright
