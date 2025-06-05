@@ -11,7 +11,7 @@ function Hero() {
 
 function Cards() {
     return (
-        <div className="food">
+        <div className="foodCards">
         </div>
     );
 }
