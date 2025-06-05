@@ -1,3 +1,6 @@
-export default function Reservations() {
-    return <h1>Reservations</h1>
+function Reservations() {
+  return <h1>Reservations</h1>;
 }
+
+
+export default Reservations

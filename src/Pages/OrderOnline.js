@@ -1,3 +1,3 @@
 export default function OrderOnline() {
-    return <h1>OrderOnline</h1>
+  return <h1>OrderOnline</h1>;
 }

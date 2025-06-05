@@ -2,7 +2,7 @@ This project is for the capstone of the meta front-end development course from m
 
 for now i added the components and some CSS like:
 
-1-The navigation bar is mostly finished with proper Routes and some CSS for now 
+1-The navigation bar is mostly finished with proper Routes and some CSS for now
 the only remaining thing is:
 
 
