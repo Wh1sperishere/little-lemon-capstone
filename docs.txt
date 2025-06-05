@@ -22,3 +22,6 @@ C-testimonials section
 D-About us section with a route to the page for more details
 
 F-a footer with a roue to all pages and some details like a copyright
+
+3-Reservation system that acuatly work with usestate and events and hocks
+A-its mostly done all i need is to add the hooks and the css
