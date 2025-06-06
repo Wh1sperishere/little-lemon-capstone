@@ -3,32 +3,28 @@ html {
 }
 
 .head {
-  text-align: center;
-  margin-top: 1rem;
-  height: 2rem;
+  background-color: #49ae57;
+  padding: 1rem 2rem;
 }
 
-.navigation {
+.headerContent {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.navigation > ul {
-  font-size: 25px;
-  list-style-type: none;
+.navigation ul {
   display: flex;
-  padding: 1em;
-  margin: 0 auto;
-  text-align: center;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.navigation > ul a {
+.navigation a {
   text-decoration: none;
-  color: black;
-}
-
-.navigation li {
-  padding: 1rem;
+  color: white;
+  font-weight: bold;
 }
 
 .heroSection {
