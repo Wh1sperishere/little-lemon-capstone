@@ -4,7 +4,9 @@ function Hero() {
       <h1>Little Lemon</h1>
       <h3>Chicago</h3>
       <p>Idk</p>
-      <button>Reserve A Table</button>
+      <a href="#reservations">
+        <button className="reserveButton">Reserve A Table</button>
+      </a>
     </div>
   );
 }
