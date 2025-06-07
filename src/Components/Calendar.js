@@ -1,7 +1,7 @@
 import { useReducer, useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import BookingForm from './BookingForm';
-import BookingSlot from './BookingSlot';
+import BookingForm from './BookingForm.js';
+import BookingSlot from './BookingSlot.js';
 import { fetchAPI, submitAPI } from './api.js';
 
 export const initializeTimes = () => {
