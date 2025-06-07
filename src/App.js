@@ -1,93 +1,40 @@
-import { ReactComponent as Logo } from "./assets/Logo.svg";
-import { useReducer } from "react";
-import { fetchAPI } from "./api";
-
-import Home from "./Pages/Home";
-import About from "./Pages/About";
-import LogInOrRegister from "./Pages/LogInOrRegister";
-import Menu from "./Pages/Menu";
-import OrderOnline from "./Pages/OrderOnline";
-import Reservations from "./Pages/Reservations";
-import "./App.css";
-
-function initializeTimes() {
-  const today = new Date();
-  return fetchAPI(today);
-}
-
-function updateTimes(state, date) {
-  return fetchAPI(new Date(date));
-}
-
-function Footer() {
-  return (
-    <footer className="footerSection">
-      <h1>This is a footer for now</h1>
-    </footer>
-  );
-}
+import './App.css';
+import './styles.css';
+import Navbar from './Components/Navbar';
+import HeroSection from './Components/HeroSection';
+import Specials from './Components/Specials';
+import Testimonials from './Components/Testimonials';
+import Calendar from './Components/Calendar';
+import Footer from './Components/Footer';
+import ConfirmedBooking from './Components/ConfirmedBooking';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 function App() {
-  const [availableTimes, dispatch] = useReducer(
-    updateTimes,
-    [],
-    initializeTimes
-  );
-
   return (
-    <>
-      <header className="head">
-        <div className="headerContent">
-          <Logo />
-          <nav className="navigation">
-            <ul>
-              <li>
-                <a href="#home">Home</a>
-              </li>
-              <li>
-                <a href="#about">About</a>
-              </li>
-              <li>
-                <a href="#menu">Menu</a>
-              </li>
-              <li>
-                <a href="#reservations">Reservations</a>
-              </li>
-              <li>
-                <a href="#order">Order Online</a>
-              </li>
-              <li>
-                <a href="#login">LogIn</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </header>
-      <main>
-        <section id="home">
-          <Home />
-        </section>
-        <section id="about">
-          <About />
-        </section>
-        <section id="menu">
-          <Menu />
-        </section>
-        <section id="reservations">
-          <Reservations
-            availableTimes={availableTimes}
-            updateTimes={dispatch}
+    <Router>
+      <div className="container">
+        <Navbar />
+        <main>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <HeroSection />
+                <Specials />
+                <Testimonials />
+                <Calendar />
+              </>
+            }
           />
-        </section>
-        <section id="order">
-          <OrderOnline />
-        </section>
-        <section id="login">
-          <LogInOrRegister />
-        </section>
-      </main>
-      <Footer />
-    </>
+          <Route path="/confirmed" element={<ConfirmedBooking />} />
+        </Routes>
+        </main>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 

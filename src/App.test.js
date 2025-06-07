@@ -1,8 +1,9 @@
-import { render, screen } from "@testing-library/react";
-import Reservations from './Pages/Reservations';
+import { render, screen } from '@testing-library/react';
+import App from './App';
 
-test('Renders the BookingForm heading', () => {
-    render(<Reservations />);
-    const headingElement = screen.getByText("Book Now");
-    expect(headingElement).toBeInTheDocument();
-})
+
+test('renders main content', () => {
+  render(<App />);
+  const mainElement = screen.getByRole('main');
+  expect(mainElement).toBeInTheDocument();
+});
