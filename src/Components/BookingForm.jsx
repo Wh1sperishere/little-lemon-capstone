@@ -50,7 +50,6 @@ const BookingForm = ({ availableTimes, selectedDate, setSelectedDate, onReservat
   return (
     <form onSubmit={handleSubmit} id="reservation">
 
-      {/* Name*/}
       <div className="bookatable">Reservations</div>
       <div className="input-group">
         <label htmlFor="res-name">Full Name</label>
@@ -68,7 +67,6 @@ const BookingForm = ({ availableTimes, selectedDate, setSelectedDate, onReservat
         </div>
       </div>
 
-      {/* Email */}
       <div className="input-group">
         <label htmlFor="res-email">Email</label>
         <div>
@@ -85,7 +83,6 @@ const BookingForm = ({ availableTimes, selectedDate, setSelectedDate, onReservat
         </div>
       </div>
 
-      {/* date */}
       <div className="input-group">
         <label htmlFor="res-date">Date</label>
         <div>
@@ -103,7 +100,6 @@ const BookingForm = ({ availableTimes, selectedDate, setSelectedDate, onReservat
         </div>
       </div>
 
-      {/* time (only available with selected date) */}
       <div className="input-group">
         <label htmlFor="time">Time</label>
         <div>
@@ -124,7 +120,6 @@ const BookingForm = ({ availableTimes, selectedDate, setSelectedDate, onReservat
           {errors.time && <span className="error">{errors.time}</span>}
         </div>
       </div>
-      {/* Guests */}
       <div className="input-group">
         <label htmlFor="guests">Number of guest</label>
         <div>

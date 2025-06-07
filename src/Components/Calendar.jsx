@@ -35,6 +35,7 @@ const Calendar = () => {
   const handleReservation = async (reservationData) => {
   const success = await submitAPI(reservationData);
   if (success) {
+
     const previousReservations = JSON.parse(localStorage.getItem('reservations')) || [];
 
     const updatedReservations = [...previousReservations, reservationData];

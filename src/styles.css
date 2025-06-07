@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@300;500;700&display=swap');
 
+/* ===== VARIABLES GLOBALES ===== */
 :root {
   --primary-green: #495e57;
   --primary-yellow: #F4CE14;
@@ -38,6 +39,7 @@ body {
   box-sizing: border-box;
 }
 
+
 .navbar {
   display: flex;
   align-items: center;
@@ -50,6 +52,7 @@ body {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+
 .logo {
   max-width: 200px;
   height: auto;
@@ -59,6 +62,7 @@ body {
 .logo:hover {
   opacity: 0.9;
 }
+
 
 .nav-links {
   display: flex;
@@ -124,7 +128,7 @@ body {
   transform: translateY(-8px) rotate(-45deg);
 }
 
-/* Menú móvil */
+
 @media (max-width: 768px) {
   .hamburger {
     display: flex;
@@ -250,7 +254,7 @@ body {
     margin-left: 0;
   }
 }
-
+/* ===== SPECIALS ===== */
 .specials {
   padding: var(--space-lg);
   background-color: var(--primary-yellow);
@@ -369,6 +373,7 @@ body {
   background-color: #3b4a45;
 }
 
+
 .testimonials {
   background: linear-gradient(
     170deg,
@@ -391,7 +396,6 @@ body {
   padding: 0 var(--space-md);
 }
 
-/* Card */
 .testimonial-card {
   background: #ffffff;
   padding: var(--space-lg);
@@ -419,7 +423,6 @@ body {
   margin-top: var(--space-sm);
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .testimonial-card {
     max-width: 90%;
@@ -430,6 +433,7 @@ body {
     font-size: 2rem;
   }
 }
+
 
 .Calendar {
   font-family: 'Markazi Text', serif;
@@ -508,11 +512,13 @@ form {
   box-shadow: 0 0 5px rgba(244, 206, 20, 0.67);
 }
 
+
 .error {
   color: red;
   font-size: 0.9rem;
   margin-top: 0.3rem;
 }
+
 
 form button {
   background-color: var(--primary-yellow);
@@ -531,6 +537,7 @@ form button:hover {
   background-color: #e3be10;
   transform: scale(1.03);
 }
+
 
 .booking-slots {
   margin-top: var(--space-lg);
@@ -554,6 +561,7 @@ form button:hover {
   color: var(--primary-green);
 }
 
+
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -575,6 +583,7 @@ form button:hover {
     transform: translateY(0);
   }
 }
+
 
 @media (max-width: 600px) {
   .Calendar h2 {
